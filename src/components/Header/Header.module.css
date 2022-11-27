@@ -1,0 +1,10 @@
+.header{
+    display: flex;
+    background-color: var(--color-main);
+    grid-area: h;
+    align-items: center;
+}
+  
+.img{
+   height: 100%;
+}

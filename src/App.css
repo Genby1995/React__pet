@@ -1,36 +1,29 @@
+html,
+body{
+  --color-text: rgb(220, 220, 220);
+  --color-stroke: rgba(220, 220, 220, 0.25);
+  --color-bkg: rgb(50, 50, 50);
+  --color-main: rgb(75, 75, 75);
+  --color-char: rgb(0, 100, 200);
+  font-size: 16px;
+  color: var(--color-text);
+  background-color: var(--color-bkg);
+}
+
 .app-wrapper {
+  margin-inline: auto;
+  max-width: 1140px;
+  padding: 15px;
   display: grid;
   grid-template-areas:
-  'h h h'
-  'c n n';
-  grid-template-columns: 7fr 3fr;
+  'h h'
+  'c n';
+  grid-template-columns: 1fr 320px;
   grid-template-rows: 80px auto;
   gap: 10px;
-  background-color: rgb(50, 50, 50);
+  background-color: var(--color-bkg);
 }
 
-.header{
-  display: flex;
-  background-color: lightslategray;
-  grid-area: h;
-  align-items: center;
-}
-
-.header img{
-  height: 100%;
-}
-
-.side-menu{
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background-color: lightslategray;
-  grid-area: n;
-
-}
-
-.content{
-  background-color: lightslategray;
+.app-wrapper__content {
   grid-area: c;
 }

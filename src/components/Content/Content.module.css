@@ -1,0 +1,11 @@
+.content{
+    gap: 10px;
+    background-color: var(--color-bkg);
+}
+
+.posts{
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+

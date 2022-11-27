@@ -1,0 +1,17 @@
+.menu{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--color-main);
+    grid-area: n;
+}
+
+.item a{
+    color: var(--color-text);
+}
+
+.item a.active {
+    color: var(--color-char);
+}
+

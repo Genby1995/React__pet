@@ -1,0 +1,53 @@
+.messenger{
+    display: grid;
+    grid-template-columns: 200px auto;
+    border-radius: 5px;
+    border: solid 1px var(--color-stroke);
+    background-color: var(--color-main);
+}
+
+.dialogs{
+    padding: 10px;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    border-right: solid 1px var(--color-stroke);
+}
+
+.dialogs a{
+   color: var(--color-text);
+}
+
+.dialogs a.active{
+    color: var(--color-char);
+ }
+
+.companion .active{
+    color: var(--color-char);
+}
+
+.messages{
+    gap: 1rem;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-right: solid 1px var(--color-stroke);
+}
+
+.messageMy,
+.messageCo{
+    padding: 0.5rem;
+    border: solid 1px var(--color-stroke);
+    border-radius: 1rem;
+}
+
+.messageMy{
+    align-self: end;
+    background-color: var(--color-char);
+}
+
+.messageCo{
+    align-self: start;
+    background-color: var(--color-stroke);
+}

@@ -1,0 +1,29 @@
+.post{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: solid 1px var(--color-stroke);
+    background-color: var(--color-main);
+}
+
+.title{
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-bottom: solid 1px var(--color-text);
+    color: var(--color-text);
+    opacity: 0.75;
+}
+
+.content{
+    flex-basis: 100%;
+    padding: 10px;
+    color: var(--color-text);
+}
+
+.actions{
+    padding: 10px;
+    background-color: var(--color-bkg);
+    opacity: 0.75;
+    border-radius: 0 0 5px 5px;
+}

@@ -1,0 +1,37 @@
+.sideProfile{
+  display: grid;
+  grid-template-areas:
+  'c c'
+  'a nik'
+  'a name';
+  grid-template-columns: 70px auto;
+  grid-template-rows: 100px 30px 30px;
+
+  gap: 10px;
+}
+
+.cover{
+  grid-area: c;
+  border-radius: 5px 5px 0 0;
+  background-image: url('https://www.ejin.ru/wp-content/uploads/2017/09/5-805.jpg');
+  box-shadow: 0 -15px 10px 0 var(--color-main) inset;
+  background-position: center;
+  background-size: cover;
+}
+
+.avatar{
+  grid-area: a;
+  height: 100%;
+  border-radius: 50%;
+  background-image: url('../../../img/avatar_my.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.nikname {
+  grid-area: nik;
+}
+
+.name {
+  grid-area: name;
+}
